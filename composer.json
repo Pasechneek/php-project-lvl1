@@ -5,6 +5,8 @@
             "Hexlet\\Code\\": "src/"
         }
     },
+    "description": "my first Hexlet project",
+    "license": "proprietary",
     "bin": [
         "bin/brain-games"
       ],
