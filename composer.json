@@ -3,7 +3,10 @@
     "autoload": {
         "psr-4": {
             "Hexlet\\Code\\": "src/"
-        }
+        },
+        "files": [
+            "src/Cli.php"
+        ]
     },
     "description": "my first Hexlet project",
     "license": "proprietary",
@@ -16,5 +19,7 @@
             "email": "danil.merkurev@yandex.com"
         }
     ],
-    "require": {}
+    "require": {
+        "wp-cli/php-cli-tools": "^0.11.12"
+    }
 }
