@@ -4,4 +4,4 @@ jobs:
   check-bats-version:
     runs-on: ubuntu-latest
     steps:
-      - run: make lint
+      - run: composer exec --verbose phpcs -- --standard=PSR12 src bin
