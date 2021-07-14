@@ -28,10 +28,9 @@ jobs:
     filesAndFoldersToIgnore: # optional, default is ["node_modules", ".git", "dist", ".github"]
     # The maximum number of LOC for the sum of files
     maxCount: 1
-          
-          
-      - name: Install
-        # Install project
+    
+     - name: Install
+    # Install project
         run: make install
       - name: Run linter
         # Run Linter
