@@ -1,8 +1,20 @@
-name: GitHub Actions Demo
-on: [push]
+name: make lint
+on: 
+  -push
+  - pull_request
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
       - run: echo "test"
-      - run: make lint
+      - uses: actions/checkout@v2
+        # Step's name
+      - name: Setup PHP
+        # Action gives to setup the PHP environment to test application
+        # https://github.com/shivammathur/setup-php
+        uses: shivammathur/setup-php@v2
+        
+        - name: Install
+        # Install project
+        run: make install
+
