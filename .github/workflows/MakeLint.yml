@@ -14,28 +14,16 @@ jobs:
         with:
           # Specify the PHP version
           php-version: '7.4'
-          
-          
-          
       - name: Lines Of Code Alert
-  # You may pin to the exact commit or the version.
-  # uses: NachoVazquez/loc-alarm@d1234ffd3e8bbd2d0d782b43f3102dc323b55850
-  uses: NachoVazquez/loc-alarm@v1
-  with:
-    # The file or folder to process
-    fileOrFolderToProcess: # optional, default is .
-    # A list of directories to ignore. Supports glob patterns.
-    filesAndFoldersToIgnore: # optional, default is ["node_modules", ".git", "dist", ".github"]
-    # The maximum number of LOC for the sum of files
-    maxCount: 1
-    
-  -name: Install
-  run: make install
-  
-    - name: Run linter
-        # Run Linter
+        uses: NachoVazquez/loc-alarm@v1
+        with:
+        fileOrFolderToProcess:
+        filesAndFoldersToIgnore:
+        maxCount: 1
+        -name: Install
+        run: make install
+      - name: "Run linter"
         run: make lint
-        # Publish code coverage on Code Climate
         # https://github.com/paambaati/codeclimate-action
       - name: Run test & publish code coverage
         uses: paambaati/codeclimate-action@v2.6.0
