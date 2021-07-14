@@ -14,13 +14,7 @@ jobs:
         with:
           # Specify the PHP version
           php-version: '7.4'
-      - name: Lines Of Code Alert
-        uses: NachoVazquez/loc-alarm@v1
-        with:
-        fileOrFolderToProcess:
-        filesAndFoldersToIgnore:
-        maxCount: 1
-        -name: Install
+      - name: Install
         run: make install
       - name: "Run linter"
         run: make lint
