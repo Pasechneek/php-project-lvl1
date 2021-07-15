@@ -15,4 +15,6 @@ jobs:
       - name: Install
         # Install project
         run: make install
+      - name: linter
+        run: make lint
 
