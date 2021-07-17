@@ -8,7 +8,7 @@ use SebastianBergmann\Type\VoidType;
 use function cli\line;
 use function cli\prompt;
 
-function cli($name)
+function cli()
 {
     line('Welcome to the Brain Game!');
     $name = prompt('May I have your name?');
