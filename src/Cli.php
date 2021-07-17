@@ -9,7 +9,4 @@ namespace Brain\Games\Cli;
   line('May I have your name?');
   //$name = prompt('May I have your name?');
   $name = trim(fgets(STDIN));
-if ($name === "") {
-    $name = "Danil";
-}
-line("Hello, %s!", $name);
+  line("Hello, %s!", $name);
