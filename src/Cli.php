@@ -2,11 +2,15 @@
 
 namespace Brain\Games\Cli;
 
-  use function cli\line;
-  use function cli\prompt;
+use phpDocumentor\Reflection\Types\Void_;
+use SebastianBergmann\Type\VoidType;
 
-  line('Welcome to the Brain Game!');
-  line('May I have your name?');
-  //$name = prompt('May I have your name?');
-  $name = trim(fgets(STDIN));
-  line("Hello, %s!", $name);
+use function cli\line;
+use function cli\prompt;
+
+function cli($name)
+{
+    line('Welcome to the Brain Game!');
+    $name = prompt('May I have your name?');
+    return line("Hello, %s!", $name);
+}
