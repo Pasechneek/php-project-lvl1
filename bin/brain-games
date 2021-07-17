@@ -2,6 +2,6 @@
 
 <?php
 
-use function Brain\Games\Cli 
+use function Brain\Games\Cli;
 
 ?>
