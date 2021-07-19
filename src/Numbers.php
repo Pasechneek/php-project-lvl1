@@ -37,5 +37,4 @@ function numbers(): string
         line("Let's try again, {$name}.");
         return $name;
     }
-    
 }
