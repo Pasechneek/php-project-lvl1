@@ -32,8 +32,10 @@ function numbers(): string
     }
     if ($fails === 0) {
         line("Congratulations, {$name}!");
+        return $name;
     } else {
-        line("Try again, {$name}.");
+        line("Let's try again, {$name}.");
+        return $name;
     }
-    return $name;
+    
 }
