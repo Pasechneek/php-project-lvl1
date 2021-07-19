@@ -1,19 +1,12 @@
 #!/usr/bin/env php
 <?php
-namespace Brain\Games;
+namespace Drain\Games\Execute;
+$autoloadPath = __DIR__ . '/../vendor/autoload.php';
+require_once $autoloadPath;
 
 use function Brain\Games\Numbers\numbers;
-use function cli\line;
-use function cli\prompt;
-use function Brain\Games\Cli\cli;
 
-numbers('Danil');
-/*
-function call (void)
-{
-    $name = 'Danil';
-    numbers($name);
-}
-call();
-*/
+$name = numbers();
+echo "your name is {$name}\n";
+
 ?>
