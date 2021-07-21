@@ -1,12 +1,12 @@
 #!/usr/bin/env php
 <?php
-namespace Drain\Games\Execute;
+namespace Brain\Games\Exec\Calc;
 
 $autoloadPath = __DIR__ . '/../vendor/autoload.php';
 require_once $autoloadPath;
 
-use function Brain\Games\Even\even;
+use function Brain\Games\Src\Games\Calc\calc;
 
-even();
+calc();
 
 ?>

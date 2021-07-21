@@ -6,14 +6,17 @@
         },
         "files": [
             "src/Cli.php",
-            "src/Numbers.php"
+            "src/Games/Even.php",
+            "src/Games/Calc.php",
+            "src/Engine.php"
         ]
     },
     "description": "my first Hexlet project",
     "license": "proprietary",
     "bin": [
         "bin/brain-games",
-        "bin/brain-even"
+        "bin/brain-even",
+        "bin/brain-calc"
       ],
     "authors": [
         {

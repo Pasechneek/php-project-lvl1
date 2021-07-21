@@ -12,3 +12,9 @@ lint:
 
 brain-even:
 	./bin/brain-even
+
+dump: 
+	composer dump-autoload --optimize
+
+brain-calc:
+	./bin/brain-calc
