@@ -20,8 +20,8 @@ function gcdRealization($a, $b)
 
 function gcd(): void
 {
-    line('Find the greatest common divisor of given numbers.');
     $name = cli();
+    line('Find the greatest common divisor of given numbers.');
     $attempts = 3;
 
     for ($counter = 0; $counter < $attempts; $counter++) {

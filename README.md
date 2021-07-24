@@ -3,10 +3,10 @@
 [![Linter!](https://github.com/Pasechneek/php-project-lvl1/actions/workflows/MakeLint.yml/badge.svg)](https://github.com/Pasechneek/php-project-lvl1/actions/workflows/MakeLint.yml)
 
 brain-even
-https://asciinema.org/a/AJFB5cRsbfOVuXKThGg0wBSXf
+https://asciinema.org/a/426168
 
 brain-calc
-https://asciinema.org/a/WLPOhQsxMT4B5wKL2oTWCWxaS
+https://asciinema.org/a/426584
 
 brain-gcd
-https://asciinema.org/a/TzA4Jfs0aMnwF1MfMTsPZ0H8i
+https://asciinema.org/a/426977
