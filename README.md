@@ -10,3 +10,6 @@ https://asciinema.org/a/426584
 
 brain-gcd
 https://asciinema.org/a/426977
+
+brain-progression
+https://asciinema.org/a/426983
