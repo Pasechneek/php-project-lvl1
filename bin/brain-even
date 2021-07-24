@@ -1,6 +1,6 @@
 #!/usr/bin/env php
 <?php
-namespace Drain\Games\Execute;
+namespace Drain\Games\Bin\Even;
 
 $autoloadPath = __DIR__ . '/../vendor/autoload.php';
 require_once $autoloadPath;

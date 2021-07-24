@@ -1,12 +1,12 @@
 #!/usr/bin/env php
-
 <?php
-namespace Brain\Games\Bin\Cli;
+namespace Brain\Games\Bin\Gcd;
 
 $autoloadPath = __DIR__ . '/../vendor/autoload.php';
 require_once $autoloadPath;
 
-use function Brain\Games\Cli\cli;
-cli();
+use function Brain\Games\Src\Games\Gcd\gcd;
+
+gcd();
 
 ?>
