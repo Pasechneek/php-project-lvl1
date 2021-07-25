@@ -27,19 +27,17 @@ function prime(): void
              $correctAncver = 'no';
         }
         $correctAncver = (string) $correctAncver;
-        echo "the correct ancver is ";
-        var_dump($correctAncver);
-        $engine = engine($question, $correctAncver, $name); //engine
+        //echo "the correct ancver is ";
+        //var_dump($correctAncver);
         //var_dump($engine);
         do {
-            if ($engine) {
-                $result = "Congratulations, {$name}!";
-            } else {
-                $result = "Let's try again, {$name}.";
-                $engine = engine($question, $correctAncver, $name);
-                //break;
-            }
-        } while ($engine !== true); // цикл игр закрывается
-        line($result);
+            $engine = engine($question, $correctAncver, $name);
+        } while ($engine !== true);
     }
+    if ($engine) {
+        $result = "Congratulations, {$name}!";
+    } else {
+        $result = "Let's try again, {$name}.";
+    }
+    line($result);
 }
