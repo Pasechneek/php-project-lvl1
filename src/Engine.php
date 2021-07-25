@@ -8,7 +8,7 @@ use function cli\prompt;
 function engine($question, $correctAncver, $name): bool
 {
     line("Question: {$question}");
-    $answer = prompt('Your answer: ');
+    $answer = prompt('Your answer');
     if ($answer === $correctAncver) {
         line('Correct!');
         $result = true;

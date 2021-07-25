@@ -13,3 +13,11 @@ https://asciinema.org/a/426977
 
 brain-progression
 https://asciinema.org/a/426983
+
+brain-prime
+https://asciinema.org/a/427072
+
+использование программы требует установленного пакета gmp
+sudo apt install php8.0-gmp
+
+As sample should consider file Src\Games\Prime.php where i live comments. 
