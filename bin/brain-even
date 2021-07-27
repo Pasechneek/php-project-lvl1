@@ -9,8 +9,9 @@ use function Brain\Games\Even\even;
 use function Brain\Games\Cli\cli;
 use function cli\line;
 
-$name = cli();
-line('Answer "yes" if the number is even, otherwise answer "no".');
-line(even($name));
+//$name = cli();
+//line('Answer "yes" if the number is even, otherwise answer "no".');
+//var_dump($name);
+even($name);
 
 ?>

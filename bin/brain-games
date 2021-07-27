@@ -8,6 +8,8 @@ require_once $autoloadPath;
 use function Brain\Games\Cli\cli;
 use function Brain\Games\Src\Storage\storage;
 
+global $name;
 $name = cli();
+//var_dump($name);
 
 ?>

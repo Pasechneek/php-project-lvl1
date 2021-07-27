@@ -7,9 +7,10 @@ use Psy\Util\Str;
 use function cli\line;
 use function Brain\Games\Src\Engine\engine;
 
-function even($name): void
+function even($name)
 {
-    for ($i = 0; $i < 3; $i++) {
+    $attempts = 3;
+    for ($i = 0; $i < $attempts; $i++) {
         $randomNumber = rand(1, 99);
         $isEven = $randomNumber % 2 === 0;
         $correctAncver = $isEven ? 'yes' : 'no';
@@ -24,5 +25,7 @@ function even($name): void
             break;
         }
     }
+    //return $result;
     line($result);
+
 }
