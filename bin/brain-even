@@ -11,6 +11,6 @@ use function cli\line;
 
 $name = cli();
 line('Answer "yes" if the number is even, otherwise answer "no".');
-even($name);
+line(even($name));
 
 ?>
