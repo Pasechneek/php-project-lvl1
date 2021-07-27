@@ -1,5 +1,5 @@
 install:
-	apt install php8 --with-gmp
+	apt install php --with-gmp
 	composer install
 
 brain-games:
