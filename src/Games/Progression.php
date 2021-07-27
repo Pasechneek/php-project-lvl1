@@ -21,7 +21,7 @@ function progression(): void
         $question = '';
         $correctAncver = '';
 
-        for ($i = 0; $i <= $progressionSize; $i++) {
+        for ($i = 0, $question = "{$arr[$i]}"; $i <= $progressionSize; $i++) {
             if ($i === $position) {
                 $char = '..';
                 $correctAncver = $arr[$position];
@@ -29,7 +29,10 @@ function progression(): void
                 $char = $arr[$i];
             }
             $arr[] = $arr[$i] + $tempo;
-            $question = $question . ' ' . $char;
+            if ($i >= 1) {
+            $question .= " {$char}";
+        }
+            var_dump($question);
         }
         $correctAncver = (string) $correctAncver;
         //echo "the correct ancver is ";
