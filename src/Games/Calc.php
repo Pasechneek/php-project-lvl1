@@ -30,7 +30,7 @@ function calc(): void
         if ($engine) {
             $result = "Congratulations, {$name}!";
         } else {
-            $result = "Let's try again, {$name}.";
+            $result = "Let's try again, {$name}!";
             break;
         }
     }
