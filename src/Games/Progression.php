@@ -13,7 +13,7 @@ function progression(): void
     $attempts = 3;
 
     for ($counter = 0; $counter < $attempts; $counter++) {
-        $progressionSize = rand(5, 10);
+        $progressionSize = rand(6, 15);
         $position = rand(1, $progressionSize);
         //echo "position is {$position}\n";
         $tempo = rand(2, 5);
