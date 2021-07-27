@@ -1,7 +1,5 @@
 #!/usr/bin/env php
-
 <?php
-
 namespace Brain\Games\Bin\Cli;
 
 $autoloadPath = __DIR__ . '/../vendor/autoload.php';
