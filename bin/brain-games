@@ -1,12 +1,14 @@
 #!/usr/bin/env php
 
 <?php
+
 namespace Brain\Games\Bin\Cli;
 
 $autoloadPath = __DIR__ . '/../vendor/autoload.php';
 require_once $autoloadPath;
 
 use function Brain\Games\Cli\cli;
+
 cli();
 
 ?>
