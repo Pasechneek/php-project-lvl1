@@ -32,7 +32,7 @@ function progression(): void
             if ($i >= 1) {
             $question .= " {$char}";
         }
-            var_dump($question);
+           // var_dump($question);
         }
         $correctAncver = (string) $correctAncver;
         //echo "the correct ancver is ";
