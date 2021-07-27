@@ -1,4 +1,5 @@
 install:
+	sudo apt-get install php7.0-gmp
 	composer install
 
 brain-games:
