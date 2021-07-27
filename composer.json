@@ -32,7 +32,7 @@
     ],
     "require": {
         "wp-cli/php-cli-tools": "^0.11.12",
-        "lib-gmp": "^6.1"
+        "lib-gmp": "*"
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "^3.6"}
