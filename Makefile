@@ -1,6 +1,5 @@
 install:
 	composer install
-	sudo apt install php8.0-gmp
 
 brain-games:
 	./bin/brain-games
