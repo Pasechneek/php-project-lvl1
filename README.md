@@ -15,10 +15,9 @@ https://asciinema.org/a/426983
 brain-prime
 https://asciinema.org/a/427072
 
-использование программы требует установленного пакета gmp
-sudo apt install php8.0-gmp
+Check and use makefile to start the project
 
-As sample should consider file Src\Games\Prime.php where i live comments. 
+As sample you should to consider file Src\Games\Prime.php where i live comments. 
 
 [![hexlet-check](https://github.com/Pasechneek/php-project-lvl1/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Pasechneek/php-project-lvl1/actions/workflows/hexlet-check.yml)
 
