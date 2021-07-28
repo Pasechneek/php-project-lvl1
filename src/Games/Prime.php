@@ -42,14 +42,13 @@ function prime(): void
         //echo "the correct ancver is ";
         //var_dump($correctAncver);
         //var_dump($engine);
-        do {
-            $engine = engine($question, $correctAncver, $name);
-        } while ($engine !== true);
-    }
-    if ($engine) {
-        $result = "Congratulations, {$name}!";
-    } else {
-        $result = "Let's try again, {$name}!";
+        $engine = engine($question, $correctAncver, $name);
+        if ($engine) {
+            $result = "Congratulations, {$name}!";
+        } else {
+            $result = "Let's try again, {$name}!";
+            break;
+        }
     }
     line($result);
 }
