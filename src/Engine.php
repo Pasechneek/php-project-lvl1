@@ -5,7 +5,7 @@ namespace Brain\Games\Src\Engine;
 use function cli\line;
 use function cli\prompt;
 
-function engine($question, $correctAncver, $name): bool
+function engine(string $question, string $correctAncver): bool
 {
     line("Question: {$question}");
     $answer = prompt('Your answer');

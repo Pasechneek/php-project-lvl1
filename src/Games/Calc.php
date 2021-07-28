@@ -8,6 +8,7 @@ use function Brain\Games\Cli\cli;
 
 function calc(): void
 {
+    $result = '';
     line('What is the result of the expression?');
     $name = cli();
     $attempts = 3;
@@ -21,7 +22,7 @@ function calc(): void
             $correctAncver = $first + $second;
         } elseif ($randOperand === "-") {
             $correctAncver = $first - $second;
-        } elseif ($randOperand === "*") {
+        } else {
             $correctAncver = $first * $second;
         }
         $question = "{$first} {$randOperand} {$second}";

@@ -6,7 +6,7 @@ use function Brain\Games\Src\Engine\engine;
 use function cli\line;
 use function Brain\Games\Cli\cli;
 
-function isPrime($nu)
+function isPrime(int $nu): int
 {
     if ($nu == 1) {
         return 0;
@@ -25,11 +25,12 @@ function prime(): void
     line('Answer "yes" if given number is prime. Otherwise answer "no".');
     $attempts = 3;
     $correctAncver = '';
+    $result = '';
 
     for ($counter = 0; $counter < $attempts; $counter++) {  // цикл игр открывается
         $someNumber = rand(1, 100);
         $question = "{$someNumber}";
-        $check = isPrime($someNumber, 10);
+        $check = isPrime($someNumber);
         if ($check === 0) {// NOT Simple
             $correctAncver = 'no';
         } elseif ($check > 0) {// Simple 100%
@@ -38,7 +39,6 @@ function prime(): void
        // echo "strange situation with someNumber = {$someNumber} and check = {$check}\n";
              $correctAncver = 'no';
         }
-        $correctAncver = (string) $correctAncver;
         //echo "the correct ancver is ";
         //var_dump($correctAncver);
         //var_dump($engine);

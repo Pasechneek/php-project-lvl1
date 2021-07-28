@@ -6,7 +6,7 @@ use function Brain\Games\Src\Engine\engine;
 use function cli\line;
 use function Brain\Games\Cli\cli;
 
-function gcdRealization($a, $b)
+function gcdRealization(int $a, int $b): int
 {
     while ($a != $b) {
         if ($a > $b) {
@@ -20,6 +20,7 @@ function gcdRealization($a, $b)
 
 function gcd(): void
 {
+    $result = '';
     $name = cli();
     line('Find the greatest common divisor of given numbers.');
     $attempts = 3;

@@ -20,6 +20,7 @@ function progression(): void
         $arr = [1];
         $question = '';
         $correctAncver = '';
+        $result = '';
 
         for ($i = 0, $question = "{$arr[$i]}"; $i <= $progressionSize; $i++) {
             if ($i === $position) {
