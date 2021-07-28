@@ -11,7 +11,7 @@ function isPrime($nu)
     if ($nu == 1) {
         return 0;
     }
-    for ($i = 2; $i <= $nu/2; $i++) {
+    for ($i = 2; $i <= $nu / 2; $i++) {
         if ($nu % $i == 0) {
             return 0;
         }

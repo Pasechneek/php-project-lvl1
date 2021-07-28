@@ -30,17 +30,17 @@ function progression(): void
             }
             $arr[] = $arr[$i] + $tempo;
             if ($i >= 1) {
-            $question .= " {$char}";
+                $question .= " {$char}";
+            }
+        }
+        $correctAncver = (string) $correctAncver;
+        $engine = engine($question, $correctAncver, $name);
+        if ($engine) {
+            $result = "Congratulations, {$name}!";
+        } else {
+            $result = "Let's try again, {$name}!";
+            break;
         }
     }
-    $correctAncver = (string) $correctAncver;
-    $engine = engine($question, $correctAncver, $name);
-    if ($engine) {
-        $result = "Congratulations, {$name}!";
-    } else {
-        $result = "Let's try again, {$name}!";
-        break;
-    }
-}
-line($result);
+    line($result);
 }
