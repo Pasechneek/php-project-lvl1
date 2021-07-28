@@ -17,7 +17,7 @@ function even(string $name): void
         $correctAncver = $isEven ? 'yes' : 'no';
         $question = $randomNumber;
 
-        $engine = engine($question, $correctAncver, $name);
+        $engine = engine($question, $correctAncver);
 
         if ($engine) {
             $result = "Congratulations, {$name}!";

@@ -11,6 +11,7 @@ function progression(): void
     $name = cli();
     line('What number is missing in the progression?');
     $attempts = 3;
+    $result = '';
 
     for ($counter = 0; $counter < $attempts; $counter++) {
         $progressionSize = rand(6, 15);
@@ -35,7 +36,7 @@ function progression(): void
             }
         }
         $correctAncver = (string) $correctAncver;
-        $engine = engine($question, $correctAncver, $name);
+        $engine = engine($question, $correctAncver);
         if ($engine) {
             $result = "Congratulations, {$name}!";
         } else {

@@ -33,7 +33,7 @@ function gcd(): void
         $correctAncver = (string) $correctAncver;
         //echo "the correct ancver is ";
         //var_dump($correctAncver);
-        $engine = engine($question, $correctAncver, $name);
+        $engine = engine($question, $correctAncver);
         if ($engine) {
             $result = "Congratulations, {$name}!";
         } else {
