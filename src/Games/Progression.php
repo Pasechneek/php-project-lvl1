@@ -32,18 +32,15 @@ function progression(): void
             if ($i >= 1) {
             $question .= " {$char}";
         }
-           // var_dump($question);
-        }
-        $correctAncver = (string) $correctAncver;
-        //echo "the correct ancver is ";
-        //var_dump($correctAncver);
-        $engine = engine($question, $correctAncver, $name);
-        if ($engine) {
-            $result = "Congratulations, {$name}!";
-        } else {
-            $result = "Let's try again, {$name}!";
-            break;
-        }
     }
-    line($result);
+    $correctAncver = (string) $correctAncver;
+    $engine = engine($question, $correctAncver, $name);
+    if ($engine) {
+        $result = "Congratulations, {$name}!";
+    } else {
+        $result = "Let's try again, {$name}!";
+        break;
+    }
+}
+line($result);
 }

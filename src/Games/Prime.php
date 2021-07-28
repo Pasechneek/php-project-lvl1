@@ -5,7 +5,19 @@ namespace Brain\Games\Src\Games\Prime;
 use function Brain\Games\Src\Engine\engine;
 use function cli\line;
 use function Brain\Games\Cli\cli;
-use function gmp_prob_prime;
+
+function isPrime($nu)
+{
+    if ($nu == 1) {
+        return 0;
+    }
+    for ($i = 2; $i <= $nu/2; $i++) {
+        if ($nu % $i == 0) {
+            return 0;
+        }
+    }
+    return 1;
+}
 
 function prime(): void
 {
@@ -17,10 +29,10 @@ function prime(): void
     for ($counter = 0; $counter < $attempts; $counter++) {  // цикл игр открывается
         $someNumber = rand(1, 100);
         $question = "{$someNumber}";
-        $check = gmp_prob_prime($someNumber, 10);
+        $check = isPrime($someNumber, 10);
         if ($check === 0) {// NOT Simple
             $correctAncver = 'no';
-        } elseif ($check === 2) {// Simple 100%
+        } elseif ($check > 0) {// Simple 100%
             $correctAncver = 'yes';
         } else {//strange situation
        // echo "strange situation with someNumber = {$someNumber} and check = {$check}\n";
