@@ -8,7 +8,7 @@ use SebastianBergmann\Type\VoidType;
 use function cli\line;
 use function cli\prompt;
 
-function cli()
+function cli(): string
 {
     line('Welcome to the Brain Game!');
     global $name;
